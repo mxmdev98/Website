@@ -530,3 +530,43 @@ main {
     color: #fff;
     box-shadow: 0 0 15px var(--accent-glow);
 }
+
+/* --- MOBILE RESPONSIVENESS FOR DEMOS PAGE --- */
+
+@media (max-width: 600px) {
+    /* Reduce padding on the sides so the cards have more room */
+    .demos-content {
+        padding: 1rem;
+    }
+
+    /* Force the grid to be a single column */
+    .demos-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    /* Resize images: slightly shorter on mobile to save screen space */
+    .card-image {
+        height: 180px; 
+    }
+
+    /* Adjust text sizes for better readability on small screens */
+    .demos-header h2 {
+        font-size: 2rem;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+
+    .card-description {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+
+    /* Make the button stretch full width for easier tapping */
+    .card-link {
+        width: 100%;
+        box-sizing: border-box; /* Ensures padding doesn't overflow width */
+    }
+}
