@@ -20,22 +20,26 @@ body {
     font-family: var(--font-family);
     background-color: var(--bg-color);
     color: var(--text-primary);
-    height: 100vh;
+    /* UPDATED: Allow vertical scrolling, prevent horizontal */
+    min-height: 100vh; 
+    overflow-x: hidden; 
     display: flex;
     flex-direction: column;
-    overflow: hidden; /* Prevent scrollbars from background animation */
+    /*overflow: hidden;  Prevent scrollbars from background animation */
     position: relative;
 }
 
 /* Background Animation - Abstract Floating Shapes */
 .background-shapes {
-    position: absolute;
+    /* UPDATED: Fixed position keeps background behind content while scrolling */
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: 0;
     overflow: hidden;
+    pointer-events: none; /* Ensures clicks go through to the content */
 }
 
 .shape {
