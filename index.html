@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Under Development</title>
-    <link rel="icon" type="image/png" href="favicon.png">
+    
     <!-- Link to external CSS file -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar">
-        <a href="#" class="nav-logo">BRAND</a>
+        <a href="#" class="nav-logo">MXMDEV</a>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#services">Services</a></li>
@@ -48,10 +48,14 @@
                 <div class="progress-bar" id="progress-bar"></div>
             </div>
 
-            <!-- Optional Contact Link -->
-            <div class="contact-section">
-                Need to reach us? <a href="mailto:contact@example.com" class="contact-link">Contact Support</a>
+            <!-- Updated Contact Section -->
+            <div class="contact-section">Need to reach us? 
+             <!-- Replace 'your-email@example.com' with your actual email address in the JS file later -->
+            <button id="copy-email-btn" class="contact-link">admin@mxmdev.com</button>
             </div>
+
+            <!-- Toast Notification (Hidden by default, appears when copied) -->
+             <div id="toast" class="toast">Email copied to clipboard!</div>
 
             <!-- Social Media Links Section -->
             <div class="social-links">
