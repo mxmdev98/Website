@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">MXMDEV</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="demos.html">Demos</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Background Animation Elements -->
+    <div class="background-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <main>
+        <div class="contact-wrapper">
+            
+            <!-- Left Side: Contact Details -->
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p style="margin-bottom: 2rem; color: var(--text-secondary);">
+                    Have a project in mind or want to see a specific demo? Reach out to us directly.
+                </p>
+
+                <!-- Phone Link -->
+                <a href="tel:+67570707796" class="info-item">
+                    <svg class="info-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                    <span>+(675) 7070 7796</span>
+                </a>
+
+                <!-- WhatsApp Link -->
+                <a href="https://wa.me/67575230967" target="_blank" class="info-item">
+                    <svg class="info-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.592 2.654-.696c1.005.572 1.911.836 2.805.836 3.181 0 5.768-2.586 5.768-5.766.001-3.18-2.586-5.767-5.767-5.767zm6.656 9.327c-.313.881-1.579 1.593-2.195 1.593-.615 0-1.578.24-4.637-1.282-3.059-1.522-4.987-4.654-5.138-4.859-.151-.205-1.241-1.651-1.241-3.152 0-1.502.786-2.238 1.065-2.551.279-.312.609-.391.812-.391.204 0 .408.002.585.01.188.009.439-.071.685.523.259.622.882 2.154.958 2.31.076.156.127.339.025.543-.101.204-.152.332-.298.512-.146.18-.306.402-.437.538-.145.152-.297.317-.128.623.169.306.749 1.232 1.61 1.997 1.107.987 2.04 1.293 2.348 1.439.307.146.488.123.668-.073.18-.196.774-.9.978-1.209.204-.309.408-.259.685-.154.277.104 1.756.827 2.057.978.302.151.503.226.577.353.074.127.074.736-.239 1.617z"/></svg>
+                    <span>Chat on WhatsApp</span>
+                </a>
+
+                <!-- Email Link -->
+                <a href="mailto:moutumichael@gmail.com" class="info-item">
+                    <svg class="info-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                    <span>moutumichael@gmail.com</span>
+                </a>
+            </div>
+
+            <!-- Right Side: Form -->
+            <div class="contact-form-card">
+                <h3>Send us a message</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="email" class="form-label">Your Email</label>
+                        <input type="email" id="email" class="form-input" placeholder="name@example.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" class="form-textarea" placeholder="How can we help you?" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        &copy; <span id="year">2026</span> MXMDEV. All rights reserved.
+    </footer>
+
+    <!-- Link to external JS file -->
+    <script src="script.js"></script>
+</body>
+</html>

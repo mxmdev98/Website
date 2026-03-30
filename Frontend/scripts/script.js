@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const toast = document.getElementById('toast');
     
     // ENTER YOUR EMAIL ADDRESS HERE
-    const emailToCopy = "admin@mxmdev.com"; 
+    const emailToCopy = "Send us an email"; 
 
     if (copyBtn && toast) {
         // Update the button text to show your email
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }).catch(err => {
                 console.error('Failed to copy text: ', err);
                 // Fallback: Just alert if clipboard API fails (rare)
-                alert("Could not copy email. Please copy it manually.");
+                alert("Could not copy email. Copy email address from Contact Us Page.");
             });
         });
     }
