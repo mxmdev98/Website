@@ -1,25 +1,25 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Update the Copyright Year automatically
+    // Update the Copyright Year automatically
     const yearSpan = document.getElementById('year');
     if (yearSpan) {
         yearSpan.textContent = new Date().getFullYear();
     }
 
-    // 2. Randomize the progress bar width on load 
+    // Randomize the progress bar width on load 
     // to make the page feel active (between 60% and 90%)
     const progressBar = document.getElementById('progress-bar');
     if (progressBar) {
         const randomPercent = Math.floor(Math.random() * (90 - 60 + 1) + 60);
-        // We set a small timeout to ensure the CSS transition triggers
+        //set a small timeout to ensure the CSS transition triggers
         setTimeout(() => {
             progressBar.style.width = `${randomPercent}%`;
         }, 100);
     }
-     // --- NEW: Copy Email Functionality ---
+     //Copy Email Functionality ---
     const copyBtn = document.getElementById('copy-email-btn');
     const toast = document.getElementById('toast');
     
-    // ENTER YOUR EMAIL ADDRESS HERE
+    // ENTER EMAIL ADDRESS HERE
     const emailToCopy = "Send us an email"; 
 
     if (copyBtn && toast) {
@@ -35,15 +35,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Hide the toast after 2 seconds
                 setTimeout(() => {
                     toast.classList.remove('show');
-                }, 2000);
+                }, 1000);
             }).catch(err => {
                 console.error('Failed to copy text: ', err);
-                // Fallback: Just alert if clipboard API fails (rare)
+                // Fallback: Just alert if clipboard API fails 
                 alert("Could not copy email. Copy email address from Contact Us Page.");
             });
         });
     }
 
-    // 3. Optional: Console log to confirm script loaded
+    //Console log to confirm script loaded
     console.log('Development page loaded successfully.');
 });

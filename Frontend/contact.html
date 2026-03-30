@@ -7,7 +7,6 @@
     <!-- Tab Icon-->
     <link rel="icon" type="image/png" href="assets/favicon.png">
     <!-- Link to external CSS file -->
-    <link rel="icon" type="image/png" href="logo.png">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/contact.css">
 </head>
@@ -58,20 +57,26 @@
                     <svg class="info-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
                     <span>moutumichael@gmail.com</span>
                 </a>
+                <!-- Toast Notification (Hidden by default, appears when copied) -->
+             <div id="toast" class="toast">Email copied to clipboard!</div>
             </div>
 
             <!-- Right Side: Form -->
             <div class="contact-form-card">
                 <h3>Send us a message</h3>
                 <form id="contactForm">
+                     <div class="form-group">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" id="name" name="name" class="form-input" placeholder="John Doe" required>
+                    </div>
                     <div class="form-group">
                         <label for="email" class="form-label">Your Email</label>
-                        <input type="email" id="email" class="form-input" placeholder="name@example.com" required>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="name@example.com" required>
                     </div>
                     
                     <div class="form-group">
                         <label for="message" class="form-label">Message</label>
-                        <textarea id="message" class="form-textarea" placeholder="How can we help you?" required></textarea>
+                        <textarea id="message" name="message" class="form-textarea" placeholder="How can we help you?" required></textarea>
                     </div>
 
                     <button type="submit" class="submit-btn">Send Message</button>
@@ -88,5 +93,6 @@
 
     <!-- Link to external JS file -->
     <script src="scripts/script.js"></script>
+    <script src="scripts/contactForm.js"></script>
 </body>
 </html>
