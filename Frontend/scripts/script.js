@@ -4,7 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search);
     const selectedService = urlParams.get('service');
     const messageBox = document.getElementById('message');
-
+    console.log('Selected Service from URL:', selectedService); // Debug log to check the service value
+    
     if (selectedService && messageBox) {
         // Fill the message box with the selected service
         messageBox.value = `Hi MXM Dev Team, I am interested in the pricing for your ${selectedService}. Please let me know at your earliest so we can get to discuss the details of my project.`;
