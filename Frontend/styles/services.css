@@ -147,3 +147,21 @@
         padding: 1.5rem;
     }
 }
+
+/* --- SERVICE PRICE STYLING --- */
+
+.service-price {
+    font-size: 2.5rem; /* Large font size */
+    font-weight: 800;
+    text-align: center;
+    color: var(--accent-color);
+    margin: 0.5rem 0; /* Spacing around the price */
+    letter-spacing: -1px;
+}
+
+/* Mobile Adjustments for Price */
+@media (max-width: 600px) {
+    .service-price {
+        font-size: 2rem; /* Slightly smaller on mobile */
+    }
+}
