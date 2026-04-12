@@ -1,4 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
+       
+      // --- Pre-fill Qutotation Message Field based on URL Service (Services Page)---
+    const urlParams = new URLSearchParams(window.location.search);
+    const selectedService = urlParams.get('service');
+    const messageBox = document.getElementById('message');
+
+    if (selectedService && messageBox) {
+        // Fill the message box with the selected service
+        messageBox.value = `Hi MXM Dev Team, I am interested in the pricing for your ${selectedService}. Please let me know at your earliest so we can get to discuss the details of my project.`;
+        messageBox.setAttribute('readonly', 'readonly'); // Make it read-only to prevent editing
+    }
+   
     // Update the Copyright Year automatically
     const yearSpan = document.getElementById('year');
     if (yearSpan) {
@@ -46,4 +58,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //Console log to confirm script loaded
     console.log('Development page loaded successfully.');
+
 });
