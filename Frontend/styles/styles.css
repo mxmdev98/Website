@@ -581,85 +581,194 @@ main {
     line-height: 1.5;
 }
 
+/* --- SIMPLIFIED LANDING PAGE STYLES (MOBILE & DESKTOP SAFE) --- */
+
+/* Reset Body to ensure full scrolling */
+body {
+    min-height: 100vh; /* Ensures background color fills screen */
+    overflow-x: hidden; /* Prevents side-scrolling */
+    display: block; /* Standard flow */
+}
+
+/* Hero Section - NO Fixed Height, just padding */
+.hero {
+    /* Top padding ensures space for the fixed navbar (approx 100px) */
+    padding: 120px 20px 60px 20px; 
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    background: transparent; /* Let the background shapes show through */
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+    word-wrap: break-word; /* Ensures long words break to next line */
+}
+
+.hero-title .highlight {
+    color: var(--accent-color);
+    background: linear-gradient(to right, var(--accent-color), #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    max-width: 800px;
+    margin: 0 auto 2.5rem auto; /* Centers text */
+    line-height: 1.6;
+}
+
+/* Buttons Container */
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.btn-primary {
+    background-color: var(--accent-color);
+    color: #fff;
+    border: 2px solid var(--accent-color);
+    box-shadow: 0 4px 15px var(--accent-glow);
+}
+
+.btn-primary:hover {
+    background-color: #0ea5e9;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--text-primary);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #fff;
+}
+
+/* Features Section - Stacked Layout */
+.features-section {
+    padding: 60px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-header h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: var(--text-primary);
+}
+
+/* Flexbox Grid: Stacks vertically on mobile, Row on desktop */
+.features-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping */
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    /* Width: 100% on mobile, approx 30% on desktop */
+    width: 100%; 
+    max-width: 350px; /* Limits width on desktop */
+    
+    background: var(--card-bg);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 30px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.feature-card h3 {
+    color: var(--text-primary);
+    margin: 15px 0 10px 0;
+    font-size: 1.25rem;
+}
+
+.feature-card p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(56, 189, 248, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    color: var(--accent-color);
+}
+
+.feature-icon svg {
+    width: 30px;
+    height: 30px;
+    fill: currentColor;
+}
+
 /* Bottom CTA Section */
 .cta-section {
-    padding: 5rem 2rem;
+    padding: 80px 20px;
     text-align: center;
-    background: linear-gradient(to top, rgba(15, 23, 42, 1), rgba(15, 23, 42, 0.5));
-    position: relative;
-    z-index: 2;
+    width: 100%;
+    box-sizing: border-box;
+    background: linear-gradient(to top, rgba(15, 23, 42, 1), rgba(15, 23, 42, 0.4));
 }
 
 .cta-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+    font-size: 2rem;
+    margin-bottom: 15px;
     color: var(--text-primary);
 }
 
 .cta-section p {
     color: var(--text-secondary);
-    margin-bottom: 2rem;
-    font-size: 1.1rem;
+    margin-bottom: 30px;
 }
 
-/* Mobile Adjustments for Hero */
-/* --- MOBILE OPTIMIZATION (STACKED LAYOUT) --- */
-
-@media (max-width: 768px) {
-    
-    /* 1. FIX HERO HEIGHT */
-    .hero {
-        min-height: auto; /* Removes the massive 80% height restriction */
-        padding-top: 120px; /* Adds space for the fixed navbar */
-        padding-bottom: 40px;
-    }
-
+/* --- DESKTOP OVERRIDES --- */
+@media (min-width: 768px) {
     .hero-title {
-        font-size: 2rem; /* Smaller title to fit width */
-        line-height: 1.1;
+        font-size: 3.5rem;
     }
-
+    
     .hero-subtitle {
-        font-size: 1rem;
-        padding: 0; /* Remove extra side padding */
-        margin-bottom: 2rem;
+        font-size: 1.25rem;
     }
 
-    /* 2. STACK BUTTONS VERTICALLY */
-    .hero-buttons {
-        flex-direction: column;
-        width: 100%;
-        max-width: 300px;
-    }
-
-    .btn {
-        width: 100%; /* Buttons fill the width */
-        text-align: center;
-        box-sizing: border-box;
-        margin-bottom: 10px;
-    }
-
-    /* 3. FORCE FEATURES TO 1 COLUMN (Strict Stack) */
-    .features-grid {
-        grid-template-columns: 1fr; /* Force single column */
-        gap: 1.5rem;
-    }
-
-    .feature-card {
-        padding: 1.5rem;
-    }
-
-    /* 4. TIGHTEN UP THE REST */
-    .cta-section {
-        padding: 3rem 1.5rem;
-    }
-
-    .cta-section h2 {
-        font-size: 1.8rem;
-    }
-
-    /* Ensure no horizontal scrolling */
-    body, html {
-        overflow-x: hidden;
+    .section-header h2 {
+        font-size: 2.5rem;
     }
 }
