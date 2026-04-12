@@ -22,7 +22,7 @@ body {
     color: var(--text-primary);
     /* UPDATED: Allow vertical scrolling, prevent horizontal */
     min-height: 100vh; 
-    overflow-x: hidden; 
+    overflow-x: auto;
     display: flex;
     flex-direction: column;
     /*overflow: hidden;  Prevent scrollbars from background animation */
@@ -218,24 +218,6 @@ p {
     }
 }
 
-/* Contact Section */
-.contact-section {
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-}
-
-.contact-link {
-    color: var(--accent-color);
-    text-decoration: none;
-    font-weight: 500;
-    transition: opacity 0.2s;
-}
-
-.contact-link:hover {
-    opacity: 0.8;
-    text-decoration: underline;
-}
-
 /* Footer */
 footer {
     position: relative;
@@ -258,33 +240,6 @@ footer {
     }
 }
 
-/* Social Links Styles */
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem; /* Space between icons */
-    margin-top: 2rem;
-}
-
-.social-links a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-secondary);
-    transition: all 0.3s ease;
-    text-decoration: none;
-}
-
-.social-icon {
-    width: 28px; /* Icon size */
-    height: 28px;
-    fill: currentColor; /* Makes the icon take the color of the text */
-}
-
-.social-links a:hover {
-    color: var(--accent-color);
-    transform: translateY(-3px); /* Slight lift on hover */
-}
 /* --- NAVIGATION BAR STYLES --- */
 
 .navbar {
@@ -375,27 +330,6 @@ main {
     }
 }
 
-/* Contact Button Styles (make it look like a link) */
-#copy-email-btn {
-    background: none;
-    border: none;
-    color: var(--accent-color);
-    font-weight: 500;
-    font-size: 0.9rem;
-    font-family: inherit;
-    padding: 0;
-    cursor: pointer;
-    text-decoration: none;
-    transition: opacity 0.2s;
-    position: relative;
-    top: -1px; /* Alignment adjustment */
-}
-
-#copy-email-btn:hover {
-    opacity: 0.8;
-    text-decoration: underline;
-}
-
 /* Toast Notification Styles */
 .toast {
     position: fixed;
@@ -422,171 +356,12 @@ main {
     transform: translateX(-50%) translateY(0);
 }
 
-/* --- LANDING PAGE STYLES --- */
-
-/* Hero Section */
-.hero {
-    min-height: 80vh; /* Takes up most of the screen height */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 2rem;
-    position: relative;
-    z-index: 2;
-}
-
-.hero-title {
-    font-size: 3.5rem;
-    font-weight: 800;
-    line-height: 1.2;
-    margin-bottom: 1.5rem;
-    color: var(--text-primary);
-}
-
-.hero-title .highlight {
-    color: var(--accent-color);
-    background: linear-gradient(to right, var(--accent-color), #8b5cf6);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.hero-subtitle {
-    font-size: 1.25rem;
-    color: var(--text-secondary);
-    max-width: 700px;
-    margin-bottom: 2.5rem;
-    line-height: 1.6;
-}
-
-/* Buttons */
-.hero-buttons {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.btn {
-    display: inline-block;
-    padding: 12px 30px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-.btn-primary {
-    background-color: var(--accent-color);
-    color: #fff;
-    box-shadow: 0 4px 15px var(--accent-glow);
-    border: 2px solid var(--accent-color);
-}
-
-.btn-primary:hover {
-    background-color: #0ea5e9;
-    border-color: #0ea5e9;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px var(--accent-glow);
-}
-
-.btn-secondary {
-    background-color: transparent;
-    color: var(--text-primary);
-    border: 2px solid rgba(255, 255, 255, 0.2);
-}
-
-.btn-secondary:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-color: var(--text-primary);
-    transform: translateY(-2px);
-}
-
-/* Features Section */
-.features-section {
-    padding: 4rem 2rem;
-    position: relative;
-    z-index: 2;
-}
-
-.section-header {
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.section-header h2 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-    color: var(--text-primary);
-}
-
-.section-header p {
-    color: var(--text-secondary);
-}
-
-.features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.feature-card {
-    background: var(--card-bg);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 16px;
-    padding: 2rem;
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.feature-card:hover {
-    transform: translateY(-5px);
-    border-color: rgba(56, 189, 248, 0.3);
-}
-
-.feature-icon {
-    width: 60px;
-    height: 60px;
-    background-color: rgba(56, 189, 248, 0.1);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 1.5rem auto;
-    color: var(--accent-color);
-}
-
-.feature-icon svg {
-    width: 30px;
-    height: 30px;
-    fill: currentColor;
-}
-
-.feature-card h3 {
-    color: var(--text-primary);
-    margin-bottom: 1rem;
-    font-size: 1.25rem;
-}
-
-.feature-card p {
-    color: var(--text-secondary);
-    font-size: 0.95rem;
-    line-height: 1.5;
-}
-
 /* --- SIMPLIFIED LANDING PAGE STYLES (MOBILE & DESKTOP SAFE) --- */
 
 /* Reset Body to ensure full scrolling */
 body {
     min-height: 100vh; /* Ensures background color fills screen */
-    overflow-x: hidden; /* Prevents side-scrolling */
+    overflow-x: auto; /* Prevents side-scrolling */
     display: block; /* Standard flow */
 }
 
