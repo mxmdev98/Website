@@ -26,7 +26,9 @@ document.getElementById("contactForm").addEventListener("submit", async (e) => {
       },
       body: JSON.stringify(body)
     });
+    
     const data = await res.json();
+    
     if (data.success) {
             contactForm.reset();
             submitBtn.disabled = false;
