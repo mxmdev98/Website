@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+/* Define Theme Variables matching your previous CSS file */
+@theme {
+  --color-theme-dark: #0F2854;     /* Previous --bg-color */
+  --color-theme-card: #7AAACE; /* Previous --card-bg */
+  --color-theme-text: #BDE8F5;     /* Previous --text-primary */
+  --color-theme-muted: #4988C4;   /* Previous --text-secondary */
+  --color-theme-accent: #9CD5FF;  /* Previous --accent-color */
+  --font-family-sans: 'Satoshi', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Custom Animation */
+@keyframes float {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30px, -50px) scale(1.1); }
+  66% { transform: translate(-20px, 20px) scale(0.9); }
+}
+
+.animate-float {
+  animation: float 20s infinite ease-in-out;
+}
