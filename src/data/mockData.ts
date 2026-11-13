@@ -17,17 +17,17 @@ const ServiceFeatures = [
 
 const ServicePackage = [
     {
-      price: "K500",
+      price: "K300",
       subtitle: "Starter Package",
-      features: ["5 Page Business Website", "Domain Name", "SSL Certificate", "Email Posting","Site Added To Google Search" ]
+      features: ["3 Page Business Website", "Domain Name", "SSL Certificate", "Email Posting","Site Added To Google Search" ]
     },
     {
-      price: "K1000",
+      price: "K600",
       subtitle: "Growth Solution",
       features: ["Web App & Custom Dashboard", "User Authentication", "Domain name", "Professional E-Mail Address", "Business Workflow Automation", "Database Integration", "SSL Certificates","Optimized For Google Search"]
     },
     {
-      price: "K3,000",
+      price: "K1,000",
       subtitle: "Enterprise Platform",
       features: ["Dedicated Virtual Private Server (VPS)", "Any number of Apps supported by VPS", "Database Integrations","Internet Payment Gateways", "Domain names","Professional Mailboxes","SSL Certificates", "AI Workflow Automations", "SEO Optimization for Apps"]
     }
@@ -44,7 +44,7 @@ const ServicePackage = [
       title: "Dashboard App",
       description: "A full-stack application handling user authentication, real-time data visualization, with backend API and database integration.",
       image: "https://nextjs.org/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Flearn%2Fdark%2Fdashboard.png&w=1920&q=75",
-      link: "https://dashboard.mxmdev.com"
+      link: "https://demo.mxmdev.com"
     },
     {
       title: "E-Store",
