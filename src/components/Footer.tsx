@@ -43,7 +43,7 @@ const Footer = () => {
               <span className="mr-4 ">📍</span> Port Moresby, National Capital District
             </p>
             <p className="flex items-center text-gray-300">
-              <span className="mr-2.5 ">📞</span> Phone: +(675) 7070 7796
+              <span className="mr-2.5 ">📞</span> Phone: +(675) 7236 9174
             </p>
             <a href="/contact" className="flex items-center text-gray-300 hover:text-theme-accenttransition-colors">
               <span className="mr-2.5">✉️</span> Contact Us
