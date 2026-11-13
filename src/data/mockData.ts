@@ -44,7 +44,7 @@ const ServicePackage = [
       title: "Dashboard App",
       description: "A full-stack application handling user authentication, real-time data visualization, with backend API and database integration.",
       image: "https://nextjs.org/_next/image?url=https%3A%2F%2Fh8DxKfmAPhn8O0p3.public.blob.vercel-storage.com%2Flearn%2Fdark%2Fdashboard.png&w=1920&q=75",
-      link: "https://demo.mxmdev.com"
+      link: "https://demo.mxmdev.cloud"
     },
     {
       title: "E-Store",
