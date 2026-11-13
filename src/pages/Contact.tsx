@@ -37,7 +37,7 @@ const Contact = () => {
                 <br/>
                 <span className='pb-2'>
                 <a href="tel:+67570707796" >
-                  📞 Phone: +(675) 7070 7796
+                  📞 Phone: +(675) 7236 9174
                 </a></span>
                 <br/>
                 <span className='flex wrap items-center justify-center pt-6 gap-1'>
