@@ -40,7 +40,7 @@ const Footer = () => {
           <h4 className="text-lg mb-1 text-theme-accent">Contact</h4>
           <div className="space-y-1 text-sm">
             <p className="flex items-start text-gray-300">
-              <span className="mr-4 ">📍</span> Port Moresby, National Capital District
+              <span className="mr-2.5 ">📍</span> Port Moresby, National Capital District
             </p>
             <p className="flex items-center text-gray-300">
               <span className="mr-2.5 ">📞</span> Phone: +(675) 7236 9174
