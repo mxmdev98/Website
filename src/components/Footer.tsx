@@ -51,7 +51,7 @@ const Footer = () => {
             </li>
             <li>
               <Link to="/contact" className="flex items-center gap-2.5 hover:text-theme-accent transition-colors">
-                <span aria-hidden="true" className="leading-6">✉️</span> Contact Us
+                <span aria-hidden="true" className="leading-6">✉️</span> info@mxmdev.cloud
               </Link>
             </li>
           </ul>
