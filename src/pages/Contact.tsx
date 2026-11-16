@@ -36,12 +36,12 @@ const Contact = () => {
                     Have a project in mind or want a specific demo? <br/> Reach out to us directly:
                 </p>
                 <br/>
-                <span className='pb-2'>
+                <span>
                 <a href="tel:+67572369174" >
                   📞 Phone: (675) 7236 9174 / 8345 5547
                 </a></span>
                 <br/>
-                <span className='flex flex-wrap items-center justify-center pt-6 gap-1'>
+                <span className='flex flex-wrap items-center justify-center pt-4 gap-1'>
                   <WhatsappIcon/>
                 <a href="https://wa.me/67583455547" target="_blank">
                     WhatsApp: (675) 8345 5547
@@ -51,7 +51,7 @@ const Contact = () => {
                 <a href="mailto:info@mxmdev.cloud" className="gap-4">
                    <p>📧 info@mxmdev.cloud</p>
                 </a></span>
-                <span className='pt-8'>
+                <span className='pt-4'>
                     <a href="https://www.facebook.com/mxmdev" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-4 ">
                     <FacebookIcon/> Find us on Facebook
                     </a>
