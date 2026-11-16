@@ -10,9 +10,9 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-     <div className="flex flex-col">
-    <Navbar />
-    <main >
+    <div className="flex flex-col min-h-screen">
+      <Navbar />
+      <main className="flex-1 w-full flex flex-col">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
@@ -21,7 +21,7 @@ function App() {
           <Route path="/terms" element={<Terms />} />
         </Routes>
       </main>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
