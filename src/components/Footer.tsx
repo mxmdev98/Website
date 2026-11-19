@@ -10,7 +10,7 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-bold text-theme-accent mb-3">MXM DEV</h3>
           <p className="text-gray-300 text-sm leading-relaxed">
-            Web Development & Technologies. <br/>
+            Software, Systems, & Technologies. <br/>
             Port Moresby, National Capital District.
           </p>
         </div>
