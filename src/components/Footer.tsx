@@ -11,7 +11,8 @@ const Footer = () => {
           <h3 className="text-xl font-bold text-theme-accent mb-3">MXM DEV</h3>
           <p className="text-gray-300 text-sm leading-relaxed">
             Software, Systems, & Technologies. <br/>
-            Port Moresby, National Capital District.
+            Port Moresby, National Capital District. <br/>
+            Papua New Guinea
           </p>
         </div>
 
